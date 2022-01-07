@@ -1,0 +1,98 @@
+{
+  "name": "dui.mind",
+  "version": "0.1",
+  "vendor": "vendor-name",
+  "cli_version": "2.8.10",
+  "om_version": "",
+  "signature": "",
+  "dependencies": null,
+  "migration": null,
+  "plist": [
+    {
+      "file": "ops.mind/etc/dui.mind/index.json",
+      "id": "cmdb_mpage-1s3u46gyk4stj",
+      "parent": "cmdb_mpage-infz0if4d6ir"
+    },
+    {
+      "file": "ops.mind/etc/index.json",
+      "id": "cmdb_mpage-infz0if4d6ir",
+      "parent": "cmdb_mpage-root"
+    },
+    {
+      "file": "ops.mind/index.json",
+      "id": "cmdb_mpage-root",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_plugin-2mevsjxllkq1u.json",
+      "id": "cmdb_plugin-2mevsjxllkq1u",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_plugin-2xdbl2zdgtcaa.json",
+      "id": "cmdb_plugin-2xdbl2zdgtcaa",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_plugin-3s0min4xnxtn3.json",
+      "id": "cmdb_plugin-3s0min4xnxtn3",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_plugin-p7djf67mn8wv.json",
+      "id": "cmdb_plugin-p7djf67mn8wv",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_plugin-ytndjbehpy9d.json",
+      "id": "cmdb_plugin-ytndjbehpy9d",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_site_formwork-j1idoh1ra30m.json",
+      "id": "cmdb_site_formwork-j1idoh1ra30m",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_x-11ypxfe3evwbn.json",
+      "id": "cmdb_x-11ypxfe3evwbn",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_x-1be8uqsvufyik.json",
+      "id": "cmdb_x-1be8uqsvufyik",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_x-1xs6zw6hzzy0b.json",
+      "id": "cmdb_x-1xs6zw6hzzy0b",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_x-2ps7kl92djh1f.json",
+      "id": "cmdb_x-2ps7kl92djh1f",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_x-2q3k4vrxlrxf8.json",
+      "id": "cmdb_x-2q3k4vrxlrxf8",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_x-3irkphnd5oncd.json",
+      "id": "cmdb_x-3irkphnd5oncd",
+      "parent": ""
+    },
+    {
+      "file": "resources/cmdb_x-j3jhwom02gmm.json",
+      "id": "cmdb_x-j3jhwom02gmm",
+      "parent": ""
+    },
+    {
+      "file": "resources/tar/cmdb_ql-1puiso4l66cjq.json",
+      "id": "cmdb_ql-1puiso4l66cjq",
+      "parent": ""
+    }
+  ],
+  "appdir": "ops.mind"
+}
