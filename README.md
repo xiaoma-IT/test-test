@@ -1,1 +1,0 @@
-# kuberbetes_aliyun
