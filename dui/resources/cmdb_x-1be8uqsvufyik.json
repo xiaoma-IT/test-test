@@ -1,0 +1,119 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1be8uqsvufyik",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "云服务器（关联视图）",
+    "namespace": "",
+    "descr": "auto-test",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "forms": [],
+    "selects": [
+      {
+        "field": "inode.name",
+        "name": "名称"
+      },
+      {
+        "field": "data.cloud_zone.data.cloud_region",
+        "name": "所属区域"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": "inode.name",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 0
+              }
+            ],
+            "is_array": false,
+            "display_index": 0
+          }
+        ],
+        "is_array": false,
+        "display_index": 0
+      }
+    ],
+    "conditions": null,
+    "ql": "cmdb_ql-fefa9c3a",
+    "object_id": "cmdb_object_ql-fefa9c3a",
+    "editable": true,
+    "content": "",
+    "advanced": false,
+    "edit_data": {
+      "wf_id": "cmdb_workflow-2srithfpdy4ai",
+      "data": "{\"properties\":{\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"type\":\"object\"}"
+    },
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-wjbnzl3t70mb",
+      "data": "{\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\"}},\"type\":\"object\"}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-1ks13p6euavmb",
+      "data": ""
+    },
+    "new_data": {
+      "wf_id": "cmdb_workflow-3646s5vpbjxxn",
+      "data": "{\"properties\":{},\"type\":\"object\"}"
+    },
+    "advanced_query": null,
+    "pagesize": 0,
+    "sort_field": "",
+    "view_mode": "",
+    "view_path": [
+      {
+        "model": "cmdb_schema_u_crf_server-0",
+        "field_path": "",
+        "conditions": [
+          {
+            "field": "inode.name",
+            "comparator": "=",
+            "default_value": "$empty",
+            "display_mode": "display",
+            "select_mode": "list",
+            "display_index": 0
+          }
+        ],
+        "selections": [
+          {
+            "field": "inode.name",
+            "alias": "名称",
+            "display_mode": "display",
+            "display_index": 0,
+            "sortable": false
+          },
+          {
+            "field": "data.cloud_zone.data.cloud_region",
+            "alias": "所属区域",
+            "display_mode": "display",
+            "display_index": 1,
+            "sortable": false
+          }
+        ],
+        "submitions": []
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-3gzp9ukve7jjr",
+    "cmdb_index-view_active_mode": "",
+    "cmdb_index-view_model": "cmdb_schema_u_crf_server-0"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_plugin-ytndjbehpy9d",
+    "schema_id": "cmdb_schema_plugin-0",
+    "name": "服务器数量",
+    "namespace": "",
+    "descr": "auto-test",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "properties": {
+        "server_count": {
+          "type": "number",
+          "title": "服务器数量"
+        }
+      },
+      "type": "object",
+      "title": "资源"
+    },
+    "indexes": null,
+    "fields": [
+      {
+        "id": "server_count",
+        "title": "服务器数量",
+        "descr": "",
+        "group": "",
+        "type": "number",
+        "required": false,
+        "is_array": false,
+        "fields": null,
+        "ext": null
+      }
+    ],
+    "model_indexes": null,
+    "ext": null,
+    "referer": "modelv2"
+  },
+  "indexes": {
+    "cmdb_schema_index_plugin-0": "cmdb_schema_x-23k6a3hcq364n"
+  }
+}
