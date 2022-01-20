@@ -1,0 +1,264 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_plugin-3s0min4xnxtn3",
+    "schema_id": "cmdb_schema_plugin-0",
+    "name": "cloud_server",
+    "namespace": "",
+    "descr": "auto-dui",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "properties": {},
+      "type": "object",
+      "title": "资源"
+    },
+    "indexes": [
+      {
+        "id": "cmdb_index-6ayc6r1zgqj4",
+        "key": "department",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-1ewykx5ds7dpt",
+        "key": "service_code",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-2ksf5iu66ri6s",
+        "key": "server_type",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-1l10va7gqf36p",
+        "key": "host_env",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-1xvxe9ygd4jy5",
+        "key": "usage_info",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-1e82tejvjdwsr",
+        "key": "assets_value",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-2dj9vm29r42t0",
+        "key": "ops_owner",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-2x2prbewcgt6b",
+        "key": "develop_owner",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-1skmhxy6w49er",
+        "key": "dev_owner",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-36shgd7cd5gpy",
+        "key": "qa_owner",
+        "required": false
+      }
+    ],
+    "fields": [
+      {
+        "id": "department",
+        "title": "部门",
+        "descr": "",
+        "group": "",
+        "type": "id",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-6ayc6r1zgqj4",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "service_code",
+        "title": "服务编码",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-1ewykx5ds7dpt",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "server_type",
+        "title": "服务器类型",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-2ksf5iu66ri6s",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "host_env",
+        "title": "主机环境",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-1l10va7gqf36p",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "usage_info",
+        "title": "用途信息",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-1xvxe9ygd4jy5",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "assets_value",
+        "title": "资产原值",
+        "descr": "",
+        "group": "",
+        "type": "number",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-1e82tejvjdwsr",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "ops_owner",
+        "title": "开发负责人",
+        "descr": "",
+        "group": "",
+        "type": "id",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-2dj9vm29r42t0",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "develop_owner",
+        "title": "研发负责人",
+        "descr": "",
+        "group": "",
+        "type": "id",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-2x2prbewcgt6b",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "dev_owner",
+        "title": "运维负责人",
+        "descr": "",
+        "group": "",
+        "type": "id",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-1skmhxy6w49er",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "qa_owner",
+        "title": "测试负责人",
+        "descr": "",
+        "group": "",
+        "type": "id",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-36shgd7cd5gpy",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      }
+    ],
+    "model_indexes": [
+      "cmdb_index-6ayc6r1zgqj4",
+      "cmdb_index-1ewykx5ds7dpt",
+      "cmdb_index-2ksf5iu66ri6s",
+      "cmdb_index-1l10va7gqf36p",
+      "cmdb_index-1xvxe9ygd4jy5",
+      "cmdb_index-1e82tejvjdwsr",
+      "cmdb_index-2dj9vm29r42t0",
+      "cmdb_index-2x2prbewcgt6b",
+      "cmdb_index-1skmhxy6w49er",
+      "cmdb_index-36shgd7cd5gpy"
+    ],
+    "ext": null,
+    "referer": "modelv2"
+  },
+  "indexes": {
+    "cmdb_schema_index_plugin-0": "cmdb_schema_u_crf_server-0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_index-izvt3q2fyezb",
+    "schema_id": "cmdb_schema_index-0",
+    "name": "出厂日期(新)",
+    "namespace": "",
+    "descr": "auto-test",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "type": "number",
+    "multi": false,
+    "permits": {
+      "r": "cmdb_operation-read",
+      "w": "cmdb_operation-update"
+    },
+    "schema": {
+      "type": "$index_type",
+      "format": "date-time"
+    },
+    "iid": "",
+    "ext": null,
+    "referer": "modelv2",
+    "read_only": false
+  },
+  "indexes": {}
+}

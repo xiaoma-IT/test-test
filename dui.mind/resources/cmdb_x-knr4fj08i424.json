@@ -1,0 +1,148 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-knr4fj08i424",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "云资源_关系型数据库_数据库信息数据模板",
+    "namespace": "",
+    "descr": "auto-test",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "forms": [
+      {
+        "field": "data.database_owner",
+        "show": true,
+        "title": "数据库负责人",
+        "disabled": false
+      }
+    ],
+    "selects": [
+      {
+        "field": "inode.name",
+        "name": "名称"
+      },
+      {
+        "field": "data.database_owner",
+        "name": "数据库负责人"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": "inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 0
+              },
+              {
+                "field": "data.database_owner",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 1
+              }
+            ],
+            "is_array": false,
+            "display_index": 0
+          }
+        ],
+        "is_array": false,
+        "display_index": 0
+      }
+    ],
+    "conditions": null,
+    "ql": "",
+    "object_id": "",
+    "editable": true,
+    "content": "",
+    "advanced": false,
+    "edit_data": {
+      "wf_id": "cmdb_workflow-2srithfpdy4ai",
+      "data": "{\"properties\":{\".indexes.cmdb_index-2dj9vm29r42t0\":{\"items\":{\"type\":\"string\"},\"type\":\"array\",\"title\":\"数据库负责人\",\"format\":\"ql-selector?id=cmdb_ql-47c6164e\\u0026select_mode=multi\\u0026spec=id-list\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"type\":\"object\"}"
+    },
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-wjbnzl3t70mb",
+      "data": "{\"properties\":{\"indexes.cmdb_index-2dj9vm29r42t0\":{\"items\":{\"type\":\"string\"},\"type\":\"array\",\"title\":\"数据库负责人\",\"format\":\"ql-selector?id=cmdb_ql-47c6164e\\u0026select_mode=multi\\u0026spec=id-list\",\"ui:hidden\":\"{{ rootValue.field !== 'indexes.cmdb_index-2dj9vm29r42t0' }}\"},\"field\":{\"enum\":[\"indexes.cmdb_index-2dj9vm29r42t0\"],\"enumNames\":[\"数据库负责人\"],\"type\":\"string\",\"title\":\"字段\"}},\"type\":\"object\"}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-1ks13p6euavmb",
+      "data": ""
+    },
+    "new_data": {
+      "wf_id": "cmdb_workflow-3646s5vpbjxxn",
+      "data": "{\"properties\":{\".indexes.cmdb_index-2dj9vm29r42t0\":{\"items\":{\"type\":\"string\"},\"type\":\"array\",\"title\":\"数据库负责人\",\"format\":\"ql-selector?id=cmdb_ql-47c6164e\\u0026select_mode=multi\\u0026spec=id-list\"}},\"type\":\"object\"}"
+    },
+    "advanced_query": null,
+    "pagesize": 0,
+    "sort_field": "",
+    "view_mode": "",
+    "view_path": [
+      {
+        "model": "cmdb_schema_u_cloud_rds_dbinfo-0",
+        "field_path": "",
+        "conditions": [
+          {
+            "field": "inode.name",
+            "comparator": "=~",
+            "display_mode": "display",
+            "select_mode": "list",
+            "display_index": 0
+          },
+          {
+            "field": "data.database_owner",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "list",
+            "display_index": 1
+          }
+        ],
+        "selections": [
+          {
+            "field": "inode.name",
+            "alias": "名称",
+            "display_mode": "display",
+            "display_index": 0,
+            "sortable": false
+          },
+          {
+            "field": "data.database_owner",
+            "alias": "数据库负责人",
+            "display_mode": "display",
+            "display_index": 1,
+            "sortable": false
+          }
+        ],
+        "submitions": [
+          {
+            "field": "data.database_owner",
+            "alias": "数据库负责人",
+            "default_value": "",
+            "display_index": 0,
+            "display_mode": "display",
+            "select_mode": ""
+          }
+        ]
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-s_30c16bbf",
+    "cmdb_index-view_active_mode": "",
+    "cmdb_index-view_model": "cmdb_schema_u_cloud_rds_dbinfo-0"
+  }
+}

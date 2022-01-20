@@ -1,0 +1,312 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-36lymrinwa7e6",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "云资源_NAS",
+    "namespace": "",
+    "descr": "auto-test",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "selects": [
+      {
+        "field": "inode.name",
+        "name": "名称"
+      },
+      {
+        "field": "inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": "data.personal",
+        "name": "负责人"
+      },
+      {
+        "field": "data.department",
+        "name": "部门"
+      },
+      {
+        "field": "data.status",
+        "name": "实例状态"
+      },
+      {
+        "field": "data.protocol_type",
+        "name": "协议类型"
+      },
+      {
+        "field": "data.zone.inode.name",
+        "name": "可用区"
+      },
+      {
+        "field": "data.metered_size",
+        "name": "使用量"
+      },
+      {
+        "field": "data.capacity",
+        "name": "总容量"
+      },
+      {
+        "field": "data.bandwidth",
+        "name": "带宽(MB/s)"
+      },
+      {
+        "field": "data.charge_type",
+        "name": "付费类型"
+      },
+      {
+        "field": "data.tags",
+        "name": "标签"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": "inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 0
+              },
+              {
+                "field": "data.department",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 1
+              },
+              {
+                "field": "data.personal",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 2
+              },
+              {
+                "field": "data.cloud_resource_conf",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 3
+              },
+              {
+                "field": "data.cloud_account",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 4
+              },
+              {
+                "field": "data.zone",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 5
+              },
+              {
+                "field": "data.cloud",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 6
+              }
+            ],
+            "is_array": false,
+            "display_index": 0
+          }
+        ],
+        "is_array": false,
+        "display_index": 0
+      }
+    ],
+    "conditions": null,
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_crf_nas-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_department\",\"op\":\"=-\",\"value\":[\"$empty\"]},{\"field\":\"vars.indexes_personal\",\"op\":\"=-\",\"value\":[\"$empty\"]},{\"field\":\"vars.indexes_cloud_resource_conf\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_account\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_zone\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-23prb3qw1k4ys\",\"op\":\"=\",\"value\":\"{var:vars.indexes_department}\"},{\"field\":\".indexes.cmdb_index-touvkr324ym\",\"op\":\"=\",\"value\":\"{var:vars.indexes_personal}\"},{\"field\":\".indexes.cmdb_index-cloud_resource_config\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_resource_conf}\"},{\"field\":\".indexes.cmdb_index-cloud_account\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_account}\"},{\"field\":\".indexes.cmdb_index-1g302j2psvvd1\",\"op\":\"=\",\"value\":\"{var:vars.indexes_zone}\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud}\"}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".inode.descr as 描述\",\".indexes.cmdb_index-touvkr324ym.inode.name as 负责人\",\".indexes.cmdb_index-23prb3qw1k4ys.inode.name as 部门\",\".data.status as 实例状态\",\".data.protocol_type as 协议类型\",\".indexes.cmdb_index-1g302j2psvvd1 as 可用区\",\".data.metered_size as 使用量\",\".data.capacity as 总容量\",\".data.bandwidth as 带宽(MB/s)\",\".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型\",\".data.tags.value as Tags\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_department\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-oh0dr5bitjey\u0026select_mode=multi\u0026spec=id-list\u0026widget=table\",\"title\":\"部门\",\"default\":[\"$empty\"]},\"indexes_personal\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-y3pvmmvrnfjn\u0026select_mode=multi\u0026spec=id-list\u0026widget=table\",\"title\":\"人员\",\"default\":[\"$empty\"]},\"indexes_cloud_resource_conf\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-36uqgwpb1350s\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云资源配置\"},\"indexes_cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2yznorobv7jna\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"},\"indexes_zone\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-a7bah0a3iocz\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"可用区\"},\"indexes_cloud\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3hz1kayxyf23n\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "advanced": false,
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-wjbnzl3t70mb",
+      "data": "{\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\"}},\"type\":\"object\"}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-1ks13p6euavmb",
+      "data": ""
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-2srithfpdy4ai",
+      "data": "{\"properties\":{\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"type\":\"object\"}"
+    },
+    "editable": true,
+    "new_data": {
+      "wf_id": "cmdb_workflow-3646s5vpbjxxn",
+      "data": "{\"properties\":{},\"type\":\"object\"}"
+    },
+    "ql": "",
+    "object_id": "",
+    "forms": [],
+    "advanced_query": null,
+    "pagesize": 0,
+    "sort_field": "",
+    "view_mode": "",
+    "view_path": [
+      {
+        "model": "cmdb_schema_u_crf_nas-0",
+        "field_path": "",
+        "conditions": [
+          {
+            "field": "inode.name",
+            "comparator": "=~",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 0
+          },
+          {
+            "field": "data.department",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 1
+          },
+          {
+            "field": "data.personal",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 2
+          },
+          {
+            "field": "data.cloud_resource_conf",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 3
+          },
+          {
+            "field": "data.cloud_account",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 4
+          },
+          {
+            "field": "data.zone",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 5
+          },
+          {
+            "field": "data.cloud",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 6
+          }
+        ],
+        "selections": [
+          {
+            "field": "inode.name",
+            "alias": "名称",
+            "display_mode": "display",
+            "display_index": 0,
+            "sortable": false
+          },
+          {
+            "field": "inode.descr",
+            "alias": "描述",
+            "display_mode": "display",
+            "display_index": 1,
+            "sortable": false
+          },
+          {
+            "field": "data.personal",
+            "alias": "负责人",
+            "display_mode": "display",
+            "display_index": 2,
+            "sortable": false
+          },
+          {
+            "field": "data.department",
+            "alias": "部门",
+            "display_mode": "display",
+            "display_index": 3,
+            "sortable": false
+          },
+          {
+            "field": "data.status",
+            "alias": "实例状态",
+            "display_mode": "display",
+            "display_index": 4,
+            "sortable": false
+          },
+          {
+            "field": "data.protocol_type",
+            "alias": "协议类型",
+            "display_mode": "display",
+            "display_index": 5,
+            "sortable": false
+          },
+          {
+            "field": "data.zone.inode.name",
+            "alias": "可用区",
+            "display_mode": "display",
+            "display_index": 6,
+            "sortable": false
+          },
+          {
+            "field": "data.metered_size",
+            "alias": "使用量",
+            "display_mode": "display",
+            "display_index": 7,
+            "sortable": false
+          },
+          {
+            "field": "data.capacity",
+            "alias": "总容量",
+            "display_mode": "display",
+            "display_index": 8,
+            "sortable": false
+          },
+          {
+            "field": "data.bandwidth",
+            "alias": "带宽(MB/s)",
+            "display_mode": "display",
+            "display_index": 9,
+            "sortable": false
+          },
+          {
+            "field": "data.charge_type",
+            "alias": "付费类型",
+            "display_mode": "display",
+            "display_index": 10,
+            "sortable": false
+          },
+          {
+            "field": "data.tags",
+            "alias": "标签",
+            "display_mode": "display",
+            "display_index": 11,
+            "sortable": false
+          }
+        ],
+        "submitions": null
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-14swex7ncsn4g",
+    "cmdb_index-view_active_mode": "disabled",
+    "cmdb_index-view_model": "cmdb_schema_u_crf_nas-0"
+  }
+}

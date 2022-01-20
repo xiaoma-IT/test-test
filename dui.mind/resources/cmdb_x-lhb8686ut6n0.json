@@ -1,0 +1,359 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-lhb8686ut6n0",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "云资源_关系型数据库",
+    "namespace": "",
+    "descr": "auto-test",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "selects": [
+      {
+        "field": "inode.name",
+        "name": "名称"
+      },
+      {
+        "field": "data.description",
+        "name": "实例描述"
+      },
+      {
+        "field": "data.personnel",
+        "name": "负责人"
+      },
+      {
+        "field": "data.department",
+        "name": "部门 "
+      },
+      {
+        "field": "data.status",
+        "name": "状态"
+      },
+      {
+        "field": "data.created_time",
+        "name": "创建时间"
+      },
+      {
+        "field": "data.expired_time",
+        "name": "到期时间"
+      },
+      {
+        "field": "data.instance_type",
+        "name": "实例规格"
+      },
+      {
+        "field": "data.cpu",
+        "name": "CPU核数"
+      },
+      {
+        "field": "data.memory",
+        "name": "内存大小"
+      },
+      {
+        "field": "data.disk_size",
+        "name": "磁盘容量"
+      },
+      {
+        "field": "data.db_type",
+        "name": "数据库类型"
+      },
+      {
+        "field": "data.db_version",
+        "name": "数据库版本"
+      },
+      {
+        "field": "data.charge_type",
+        "name": "付费类型"
+      },
+      {
+        "field": "data.tags",
+        "name": "标签"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": "inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 0
+              },
+              {
+                "field": "data.vpc",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 1
+              },
+              {
+                "field": "data.cloud",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 2
+              },
+              {
+                "field": "data.cloud_resource_conf",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 3
+              },
+              {
+                "field": "data.resource_group",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 4
+              },
+              {
+                "field": "data.cloud_account",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 5
+              },
+              {
+                "field": "data.vswitch",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 6
+              },
+              {
+                "field": "data.cloud",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 7
+              }
+            ],
+            "is_array": false,
+            "display_index": 0
+          }
+        ],
+        "is_array": false,
+        "display_index": 0
+      }
+    ],
+    "conditions": null,
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_crf_cloud_rds-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_vpc\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_resource_conf\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_master\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_resourcegroup\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_account\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_subnet\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-1yhey410ex3f2\",\"op\":\"=\",\"value\":\"{var:vars.indexes_vpc}\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud}\"},{\"field\":\".indexes.cmdb_index-cloud_resource_config\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_resource_conf}\"},{\"field\":\".indexes.cmdb_index-g3g32q8xcffi\",\"op\":\"=\",\"value\":\"{var:vars.indexes_master}\"},{\"field\":\".indexes.cmdb_index-15vdkzcny1lr3\",\"op\":\"=\",\"value\":\"{var:vars.indexes_resourcegroup}\"},{\"field\":\".indexes.cmdb_index-cloud_account\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_account}\"},{\"field\":\".indexes.cmdb_index-3bxtoukdedsor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_subnet}\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud}\"}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".indexes.cmdb_index-p2gkr0u73pzs as 实例描述\",\".indexes.cmdb_index-touvkr324ym as 负责人\",\".indexes.cmdb_index-23prb3qw1k4ys as 部门 \",\".indexes.cmdb_index-3si1uf8kjn4xt as 状态\",\".indexes.cmdb_index-3lofvn1raniji as 创建时间\",\".indexes.cmdb_index-1h2jo6o503e6n as 到期时间\",\".indexes.cmdb_index-f1z0t1y883dx as 实例规格\",\".data.cpu as CPU核数\",\".indexes.cmdb_index-1su5ji5jtlwup as 内存大小\",\".indexes.cmdb_index-36a7ibddg5piq as 磁盘容量\",\".indexes.cmdb_index-s1r15f3znumo as 类型\",\".data.version as 数据库版本\",\".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型\",\".data.tags.value as Tags\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_vpc\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-arr7rcbqtcnx\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属VPC\"},\"indexes_cloud\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3hz1kayxyf23n\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\"indexes_cloud_resource_conf\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-36uqgwpb1350s\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云资源配置\"},\"indexes_master\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3hew7qx2idh10\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联主节点\"},\"indexes_resourcegroup\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2unnfmh3tk3ax\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"资源组\"},\"indexes_cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2yznorobv7jna\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"},\"indexes_subnet\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-uccuaj952qrz\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"虚拟交换机\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "advanced": false,
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-wjbnzl3t70mb",
+      "data": "{\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\"}},\"type\":\"object\"}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-1ks13p6euavmb",
+      "data": ""
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-2srithfpdy4ai",
+      "data": "{\"properties\":{\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"type\":\"object\"}"
+    },
+    "editable": true,
+    "new_data": {
+      "wf_id": "cmdb_workflow-3646s5vpbjxxn",
+      "data": "{\"properties\":{},\"type\":\"object\"}"
+    },
+    "ql": "",
+    "object_id": "",
+    "forms": [],
+    "advanced_query": null,
+    "pagesize": 0,
+    "sort_field": "",
+    "view_mode": "",
+    "view_path": [
+      {
+        "model": "cmdb_schema_u_crf_cloud_rds-0",
+        "field_path": "",
+        "conditions": [
+          {
+            "field": "inode.name",
+            "comparator": "=~",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 0
+          },
+          {
+            "field": "data.vpc",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 1
+          },
+          {
+            "field": "data.cloud",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 2
+          },
+          {
+            "field": "data.cloud_resource_conf",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 3
+          },
+          {
+            "field": "data.resource_group",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 4
+          },
+          {
+            "field": "data.cloud_account",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 5
+          },
+          {
+            "field": "data.vswitch",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 6
+          },
+          {
+            "field": "data.cloud",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 7
+          }
+        ],
+        "selections": [
+          {
+            "field": "inode.name",
+            "alias": "名称",
+            "display_mode": "display",
+            "display_index": 0,
+            "sortable": false
+          },
+          {
+            "field": "data.description",
+            "alias": "实例描述",
+            "display_mode": "display",
+            "display_index": 1,
+            "sortable": false
+          },
+          {
+            "field": "data.personnel",
+            "alias": "负责人",
+            "display_mode": "display",
+            "display_index": 2,
+            "sortable": false
+          },
+          {
+            "field": "data.department",
+            "alias": "部门 ",
+            "display_mode": "display",
+            "display_index": 3,
+            "sortable": false
+          },
+          {
+            "field": "data.status",
+            "alias": "状态",
+            "display_mode": "display",
+            "display_index": 4,
+            "sortable": false
+          },
+          {
+            "field": "data.created_time",
+            "alias": "创建时间",
+            "display_mode": "display",
+            "display_index": 5,
+            "sortable": false
+          },
+          {
+            "field": "data.expired_time",
+            "alias": "到期时间",
+            "display_mode": "display",
+            "display_index": 6,
+            "sortable": false
+          },
+          {
+            "field": "data.instance_type",
+            "alias": "实例规格",
+            "display_mode": "display",
+            "display_index": 7,
+            "sortable": false
+          },
+          {
+            "field": "data.cpu",
+            "alias": "CPU核数",
+            "display_mode": "display",
+            "display_index": 8,
+            "sortable": false
+          },
+          {
+            "field": "data.memory",
+            "alias": "内存大小",
+            "display_mode": "display",
+            "display_index": 9,
+            "sortable": false
+          },
+          {
+            "field": "data.disk_size",
+            "alias": "磁盘容量",
+            "display_mode": "display",
+            "display_index": 10,
+            "sortable": false
+          },
+          {
+            "field": "data.db_type",
+            "alias": "数据库类型",
+            "display_mode": "display",
+            "display_index": 11,
+            "sortable": false
+          },
+          {
+            "field": "data.db_version",
+            "alias": "数据库版本",
+            "display_mode": "display",
+            "display_index": 12,
+            "sortable": false
+          },
+          {
+            "field": "data.charge_type",
+            "alias": "付费类型",
+            "display_mode": "display",
+            "display_index": 13,
+            "sortable": false
+          },
+          {
+            "field": "data.tags",
+            "alias": "标签",
+            "display_mode": "display",
+            "display_index": 14,
+            "sortable": false
+          }
+        ],
+        "submitions": null
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-gqtl2mnmtpss",
+    "cmdb_index-view_active_mode": "disabled",
+    "cmdb_index-view_model": "cmdb_schema_u_crf_cloud_rds-0"
+  }
+}

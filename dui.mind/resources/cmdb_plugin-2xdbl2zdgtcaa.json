@@ -1,0 +1,648 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_plugin-2xdbl2zdgtcaa",
+    "schema_id": "cmdb_schema_plugin-0",
+    "name": "BS",
+    "namespace": "",
+    "descr": "auto-dui",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "properties": {
+        "cpu_info": {
+          "type": "string",
+          "title": "cpu信息"
+        },
+        "instance_type": {
+          "type": "string",
+          "title": "实例类型"
+        }
+      },
+      "type": "object",
+      "title": "资源"
+    },
+    "indexes": [
+      {
+        "id": "cmdb_index-xkc1zaxb628y",
+        "key": "Over_warranty_date",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-izvt3q2fyezb",
+        "key": "production_date",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-3nsl8xni0lu32",
+        "key": "expr_time",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-2j5xzadzm0kzq",
+        "key": "manufacturer",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-yqij80rg3yx0",
+        "key": "service_code",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-2x2prbewcgt6b",
+        "key": "devlop_owner",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-2dj9vm29r42t0",
+        "key": "ops_owner",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-1skmhxy6w49er",
+        "key": "dev_owner",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-36shgd7cd5gpy",
+        "key": "qa_owner",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-6ayc6r1zgqj4",
+        "key": "department",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-ce070fu7uqom",
+        "key": "rac_info",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-2ksf5iu66ri6s",
+        "key": "server_type",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-1g3i416w4uqmb",
+        "key": "Purchase_date",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-1wtksuw3s3acp",
+        "key": "Purchase_time",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-1l10va7gqf36p",
+        "key": "host_env",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-2viey15aylenw",
+        "key": "status",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-vbmbb9uvg5u7",
+        "key": "assets_code",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-19nha6we5v50x",
+        "key": "card_code",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-2fur59a1e3a7e",
+        "key": "tags",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-3htd1xodwx1t8",
+        "key": "net_asserts_type",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-1xvxe9ygd4jy5",
+        "key": "usage_info",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-1e82tejvjdwsr",
+        "key": "assets_value",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-37f5cxih0tsuh",
+        "key": "mapping_ip",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-7xufqrzij3u2",
+        "key": "float_ip",
+        "required": false
+      },
+      {
+        "id": "cmdb_index-wjela2reel81",
+        "key": "usage_status",
+        "required": false
+      }
+    ],
+    "fields": [
+      {
+        "id": "Over_warranty_date",
+        "title": "过保日期",
+        "descr": "",
+        "group": "",
+        "type": "number",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-xkc1zaxb628y",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "production_date",
+        "title": "出厂日期",
+        "descr": "",
+        "group": "",
+        "type": "number",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-izvt3q2fyezb",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "expr_time",
+        "title": "到期时间",
+        "descr": "",
+        "group": "",
+        "type": "number",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-3nsl8xni0lu32",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "manufacturer",
+        "title": "制造商",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-2j5xzadzm0kzq",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "service_code",
+        "title": "服务编号",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-yqij80rg3yx0",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "devlop_owner",
+        "title": "研发负责人",
+        "descr": "",
+        "group": "",
+        "type": "id",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-2x2prbewcgt6b",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "ops_owner",
+        "title": "开发负责人",
+        "descr": "",
+        "group": "",
+        "type": "id",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-2dj9vm29r42t0",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "dev_owner",
+        "title": "运维负责人",
+        "descr": "",
+        "group": "",
+        "type": "id",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-1skmhxy6w49er",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "qa_owner",
+        "title": "测试负责人",
+        "descr": "",
+        "group": "",
+        "type": "id",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-36shgd7cd5gpy",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "department",
+        "title": "所属部门",
+        "descr": "",
+        "group": "",
+        "type": "id",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-6ayc6r1zgqj4",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "rac_info",
+        "title": "机柜信息",
+        "descr": "",
+        "group": "",
+        "type": "id",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-ce070fu7uqom",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "server_type",
+        "title": "服务器类型",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-2ksf5iu66ri6s",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "cpu_info",
+        "title": "cpu信息",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "instance_type",
+        "title": "实例类型",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "Purchase_date",
+        "title": "购入日期",
+        "descr": "",
+        "group": "",
+        "type": "number",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-1g3i416w4uqmb",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "Purchase_time",
+        "title": "购入时间",
+        "descr": "",
+        "group": "",
+        "type": "number",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-1wtksuw3s3acp",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "host_env",
+        "title": "主机环境",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-1l10va7gqf36p",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "status",
+        "title": "状态",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-2viey15aylenw",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "assets_code",
+        "title": "资产编号",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-vbmbb9uvg5u7",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "card_code",
+        "title": "卡片编码",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-19nha6we5v50x",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "tags",
+        "title": "标签",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-2fur59a1e3a7e",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "net_asserts_type",
+        "title": "网络资产类型",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-3htd1xodwx1t8",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "usage_info",
+        "title": "用途信息",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-1xvxe9ygd4jy5",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "assets_value",
+        "title": "资产原值",
+        "descr": "",
+        "group": "",
+        "type": "number",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-1e82tejvjdwsr",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "mapping_ip",
+        "title": "映射IP",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-37f5cxih0tsuh",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "float_ip",
+        "title": "浮动 IP",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": true,
+        "indexable": true,
+        "index_id": "cmdb_index-7xufqrzij3u2",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      },
+      {
+        "id": "usage_status",
+        "title": "使用状态",
+        "descr": "",
+        "group": "",
+        "type": "string",
+        "required": false,
+        "is_array": false,
+        "indexable": true,
+        "index_id": "cmdb_index-wjela2reel81",
+        "reverse_index": {
+          "id": "",
+          "name": ""
+        },
+        "fields": null,
+        "ext": null
+      }
+    ],
+    "model_indexes": [
+      "cmdb_index-xkc1zaxb628y",
+      "cmdb_index-izvt3q2fyezb",
+      "cmdb_index-3nsl8xni0lu32",
+      "cmdb_index-2j5xzadzm0kzq",
+      "cmdb_index-yqij80rg3yx0",
+      "cmdb_index-2x2prbewcgt6b",
+      "cmdb_index-2dj9vm29r42t0",
+      "cmdb_index-1skmhxy6w49er",
+      "cmdb_index-36shgd7cd5gpy",
+      "cmdb_index-6ayc6r1zgqj4",
+      "cmdb_index-ce070fu7uqom",
+      "cmdb_index-2ksf5iu66ri6s",
+      "cmdb_index-1g3i416w4uqmb",
+      "cmdb_index-1wtksuw3s3acp",
+      "cmdb_index-1l10va7gqf36p",
+      "cmdb_index-2viey15aylenw",
+      "cmdb_index-vbmbb9uvg5u7",
+      "cmdb_index-19nha6we5v50x",
+      "cmdb_index-2fur59a1e3a7e",
+      "cmdb_index-3htd1xodwx1t8",
+      "cmdb_index-1xvxe9ygd4jy5",
+      "cmdb_index-1e82tejvjdwsr",
+      "cmdb_index-37f5cxih0tsuh",
+      "cmdb_index-7xufqrzij3u2",
+      "cmdb_index-wjela2reel81"
+    ],
+    "ext": null,
+    "referer": "modelv2"
+  },
+  "indexes": {
+    "cmdb_schema_index_plugin-0": "cmdb_schema_om_physical_server-0"
+  }
+}

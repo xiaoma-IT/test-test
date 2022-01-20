@@ -1,0 +1,259 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-3an1xy60jvc03",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "云资源_证书",
+    "namespace": "",
+    "descr": "auto-test",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "selects": [
+      {
+        "field": "inode.name",
+        "name": "名称"
+      },
+      {
+        "field": "inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": "data.personnel",
+        "name": "负责人"
+      },
+      {
+        "field": "data.department",
+        "name": "部门"
+      },
+      {
+        "field": "data.issuer",
+        "name": "颁发者"
+      },
+      {
+        "field": "data.domain",
+        "name": "主域名"
+      },
+      {
+        "field": "data.domains",
+        "name": "所有包含域名"
+      },
+      {
+        "field": "data.begin_time",
+        "name": "生效时间"
+      },
+      {
+        "field": "data.expired_time",
+        "name": "到期时间"
+      },
+      {
+        "field": "data.description",
+        "name": "备注名称"
+      },
+      {
+        "field": "data.validity_period",
+        "name": "证书有效期(月)"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": "inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 0
+              },
+              {
+                "field": "data.cloud_resource_conf",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 1
+              },
+              {
+                "field": "data.cloud_account",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 2
+              },
+              {
+                "field": "data.cloud",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "display_index": 3
+              }
+            ],
+            "is_array": false,
+            "display_index": 0
+          }
+        ],
+        "is_array": false,
+        "display_index": 0
+      }
+    ],
+    "conditions": null,
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_crf_certificate-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_resource_conf\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_account\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_project_info\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-cloud_resource_config\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_resource_conf}\"},{\"field\":\".indexes.cmdb_index-cloud_account\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_account}\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud}\"},{\"field\":\".indexes.cmdb_index-15vdkzcny1lr3\",\"op\":\"=\",\"value\":\"{var:vars.indexes_project_info}\"}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".inode.descr as 描述\",\".indexes.cmdb_index-touvkr324ym as 负责人\",\".indexes.cmdb_index-23prb3qw1k4ys as 部门\",\".data.product_zh_name as 颁发者\",\".data.domain as 主域名\",\".indexes.cmdb_index-q28jpmetvivl as 证书包含的多个域名\",\".indexes.cmdb_index-3p7x9dyxwkhiv as 证书生效时间\",\".indexes.cmdb_index-144b6sef0cp4k as 证书过期时间\",\".data.alias as 备注名称\",\".data.validity_period as 证书有效期(月)\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_cloud_resource_conf\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-36uqgwpb1350s\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云资源配置\"},\"indexes_cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2yznorobv7jna\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"},\"indexes_cloud\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3hz1kayxyf23n\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\"indexes_project_info\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2unnfmh3tk3ax\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"资源组\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "advanced": false,
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-wjbnzl3t70mb",
+      "data": "{\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\"}},\"type\":\"object\"}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-1ks13p6euavmb",
+      "data": ""
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-2srithfpdy4ai",
+      "data": "{\"properties\":{\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"type\":\"object\"}"
+    },
+    "editable": true,
+    "new_data": {
+      "wf_id": "cmdb_workflow-3646s5vpbjxxn",
+      "data": "{\"properties\":{},\"type\":\"object\"}"
+    },
+    "ql": "",
+    "object_id": "",
+    "forms": [],
+    "advanced_query": null,
+    "pagesize": 0,
+    "sort_field": "",
+    "view_mode": "",
+    "view_path": [
+      {
+        "model": "cmdb_schema_u_crf_certificate-0",
+        "field_path": "",
+        "conditions": [
+          {
+            "field": "inode.name",
+            "comparator": "=~",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 0
+          },
+          {
+            "field": "data.cloud_resource_conf",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 1
+          },
+          {
+            "field": "data.cloud_account",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 2
+          },
+          {
+            "field": "data.cloud",
+            "comparator": "=",
+            "display_mode": "display",
+            "select_mode": "",
+            "display_index": 3
+          }
+        ],
+        "selections": [
+          {
+            "field": "inode.name",
+            "alias": "名称",
+            "display_mode": "display",
+            "display_index": 0,
+            "sortable": false
+          },
+          {
+            "field": "inode.descr",
+            "alias": "描述",
+            "display_mode": "display",
+            "display_index": 1,
+            "sortable": false
+          },
+          {
+            "field": "data.personnel",
+            "alias": "负责人",
+            "display_mode": "display",
+            "display_index": 2,
+            "sortable": false
+          },
+          {
+            "field": "data.department",
+            "alias": "部门",
+            "display_mode": "display",
+            "display_index": 3,
+            "sortable": false
+          },
+          {
+            "field": "data.issuer",
+            "alias": "颁发者",
+            "display_mode": "display",
+            "display_index": 4,
+            "sortable": false
+          },
+          {
+            "field": "data.domain",
+            "alias": "主域名",
+            "display_mode": "display",
+            "display_index": 5,
+            "sortable": false
+          },
+          {
+            "field": "data.domains",
+            "alias": "所有包含域名",
+            "display_mode": "display",
+            "display_index": 6,
+            "sortable": false
+          },
+          {
+            "field": "data.begin_time",
+            "alias": "生效时间",
+            "display_mode": "display",
+            "display_index": 7,
+            "sortable": false
+          },
+          {
+            "field": "data.expired_time",
+            "alias": "到期时间",
+            "display_mode": "display",
+            "display_index": 8,
+            "sortable": false
+          },
+          {
+            "field": "data.description",
+            "alias": "备注名称",
+            "display_mode": "display",
+            "display_index": 9,
+            "sortable": false
+          },
+          {
+            "field": "data.validity_period",
+            "alias": "证书有效期(月)",
+            "display_mode": "display",
+            "display_index": 10,
+            "sortable": false
+          }
+        ],
+        "submitions": null
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-g1cdq7hcim72",
+    "cmdb_index-view_active_mode": "disabled",
+    "cmdb_index-view_model": "cmdb_schema_u_crf_certificate-0"
+  }
+}
