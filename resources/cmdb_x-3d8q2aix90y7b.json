@@ -92,8 +92,8 @@
       "wf_id": "cmdb_workflow-3646s5vpbjxxn",
       "data": "{\"properties\":{\".data.server_count\":{\"type\":\"number\",\"title\":\"服务器数量\"}},\"type\":\"object\"}"
     },
-    "ql": "",
-    "object_id": "",
+    "ql": "cmdb_ql-d97659b3",
+    "object_id": "cmdb_object_ql-d97659b3",
     "forms": [
       {
         "field": "data.server_count",

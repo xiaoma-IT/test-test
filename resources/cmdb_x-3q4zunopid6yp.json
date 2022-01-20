@@ -80,8 +80,8 @@
       }
     ],
     "conditions": null,
-    "ql": "",
-    "object_id": "",
+    "ql": "cmdb_ql-e5a4d918",
+    "object_id": "cmdb_object_ql-e5a4d918",
     "editable": true,
     "content": "",
     "advanced": false,

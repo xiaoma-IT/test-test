@@ -63,8 +63,8 @@
       }
     ],
     "conditions": null,
-    "ql": "",
-    "object_id": "",
+    "ql": "cmdb_ql-939f2c1c",
+    "object_id": "cmdb_object_ql-939f2c1c",
     "editable": true,
     "content": "",
     "advanced": false,

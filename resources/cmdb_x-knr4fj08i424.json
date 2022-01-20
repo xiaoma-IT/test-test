@@ -65,8 +65,8 @@
       }
     ],
     "conditions": null,
-    "ql": "",
-    "object_id": "",
+    "ql": "cmdb_ql-1bdf0bf8",
+    "object_id": "cmdb_object_ql-1bdf0bf8",
     "editable": true,
     "content": "",
     "advanced": false,

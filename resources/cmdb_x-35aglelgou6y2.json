@@ -102,8 +102,8 @@
       "wf_id": "cmdb_workflow-3646s5vpbjxxn",
       "data": "{\"properties\":{},\"type\":\"object\"}"
     },
-    "ql": "",
-    "object_id": "",
+    "ql": "cmdb_ql-81213a7f",
+    "object_id": "cmdb_object_ql-81213a7f",
     "forms": [
       {
         "field": "data.qqqq",

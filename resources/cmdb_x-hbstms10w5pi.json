@@ -161,8 +161,8 @@
       "wf_id": "cmdb_workflow-3646s5vpbjxxn",
       "data": "{\"properties\":{},\"type\":\"object\"}"
     },
-    "ql": "",
-    "object_id": "",
+    "ql": "cmdb_ql-24abc78c",
+    "object_id": "cmdb_object_ql-24abc78c",
     "forms": [],
     "advanced_query": null,
     "pagesize": 0,
